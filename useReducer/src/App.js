@@ -1,14 +1,14 @@
 import "./App.css";
-import StarRating from "./components/StarRating/StarRating";
-import Checkbox from "./components/checkbox/Checkbox";
-import Status from "./components/status/Status";
-import Congrats from "./components/congrats/Congrats";
-import Users from "./components/users/Users";
+import StarRating from "./_components/StarRating/StarRating";
+import Checkbox from "./_components/checkbox/Checkbox";
+import Status from "./_components/status/Status";
+import Congrats from "./_components/congrats/Congrats";
+import Users from "./_components/users/Users";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Number from "./components/number/Number";
-import Message from "./components/message/Message";
+import Number from "./_components/number/Number"
+import Message from "./_components/message/Message"
 
 function App({ name }) {
   const settings = {
