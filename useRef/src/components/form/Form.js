@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import './Form.css';
 
 const Form = () => {
   const soundRef = useRef();
@@ -13,7 +14,7 @@ const Form = () => {
     colorRef.current.value = "";
   };
   return (
-    <form onSubmit={submit}>
+    <form className="form-container" onSubmit={submit}>
       <input ref={soundRef} type="text" placeholder="Sound..."></input>
       <input ref={colorRef} type="text" placeholder="Color..."></input>
       <button>Add</button>

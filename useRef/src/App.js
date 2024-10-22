@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Number from "./components/number/Number";
 import Message from "./components/message/Message";
 import Form from "./components/form/Form";
+import ControlledForm from "./components/controlledForm/ControlledForm";
 
 function App({ name }) {
   const settings = {
@@ -26,7 +27,7 @@ function App({ name }) {
       <header>
         <h1>{name}</h1>
       </header>
-      <Slider {...settings}>
+      <Slider {...settings} className="carousel">
         <div className="slide">
           <StarRating totalStars={5} />
         </div>
@@ -48,8 +49,11 @@ function App({ name }) {
         <div className="slide">
           <Message />
         </div>
-        <div>
+        <div className="slide">
           <Form />
+        </div>
+        <div className="slide">
+          <ControlledForm />
         </div>
       </Slider>
     </div>

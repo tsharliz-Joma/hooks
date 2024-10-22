@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import './Users.css';
 
 function Users() {
   const [data, setData] = useState([]);
@@ -11,7 +12,7 @@ function Users() {
 
   if (data) {
     return (
-      <div>
+      <div className="users-container">
         <h1>Users</h1>
         <ul>
           {data.map((user) => (
