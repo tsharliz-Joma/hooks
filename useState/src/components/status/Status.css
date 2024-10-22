@@ -1,0 +1,29 @@
+.status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .status div {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .status button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .status button:hover {
+    background-color: #0056b3;
+  }
