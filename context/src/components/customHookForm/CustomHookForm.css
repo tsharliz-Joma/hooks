@@ -1,0 +1,43 @@
+.form-container-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-width: 500px; /* Adjust to match your carousel slide width */
+    max-height: 500px; /* Adjust to match your carousel slide height */
+    background-color: #e0f7fa; /* Light cyan background */
+    border: 2px solid #00796b; /* Dark cyan border */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    padding: 25px;
+    overflow: hidden; /* Prevent overflow */
+  }
+  
+  .form-container-3 input {
+    width: 85%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 2px solid #00796b; /* Dark cyan border */
+    border-radius: 10px; /* More rounded corners */
+    font-size: 1rem;
+    background-color: #ffffff; /* White background */
+  }
+  
+  .form-container-3 button {
+    width: 60%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #00796b; /* Dark cyan background */
+    color: white;
+    border: none;
+    border-radius: 10px; /* More rounded corners */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-container-3 button:hover {
+    background-color: #004d40; /* Darker cyan on hover */
+  }

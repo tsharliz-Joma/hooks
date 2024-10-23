@@ -1,0 +1,71 @@
+import "./App.css";
+import StarRating from "./components/StarRating/StarRating";
+import Checkbox from "./components/checkbox/Checkbox";
+import Status from "./components/status/Status";
+import Congrats from "./components/congrats/Congrats";
+import Users from "./components/users/Users";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Number from "./components/number/Number";
+import Message from "./components/message/Message";
+import Form from "./components/form/Form";
+import ControlledForm from "./components/controlledForm/ControlledForm";
+import CustomHookForm from "./components/customHookForm/CustomHookForm";
+import Trees from "./components/trees/Trees";
+
+function App({ name }) {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: "0",
+  };
+  return (
+    <div className="App">
+      <header>
+        <h1>{name}</h1>
+      </header>
+      <Slider {...settings} className="carousel">
+        <div className="slide">
+          <StarRating totalStars={5} />
+        </div>
+        <div className="slide">
+          <Congrats />
+        </div>
+        <div className="slide">
+          <Checkbox />
+        </div>
+        <div className="slide">
+          <Status />
+        </div>
+        <div className="slide">
+          <Users />
+        </div>
+        <div className="slide">
+          <Number />
+        </div>
+        <div className="slide">
+          <Message />
+        </div>
+        <div className="slide">
+          <Form />
+        </div>
+        <div className="slide">
+          <ControlledForm />
+        </div>
+        <div className="slide">
+          <CustomHookForm />
+        </div>
+        <div className="slide">
+          <Trees />
+        </div>
+      </Slider>
+    </div>
+  );
+}
+
+export default App;
