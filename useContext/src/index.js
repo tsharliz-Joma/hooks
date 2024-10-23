@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-export const TreesContext = createContext();
+export const Trees2Context = createContext();
 
 const trees = [
   { id: 1, type: "Maple" },
@@ -15,9 +15,9 @@ const trees = [
 ];
 
 root.render(
-  <TreesContext.Provider value={{ trees }}>
+  <Trees2Context.Provider value={{ trees }}>
     <App />
-  </TreesContext.Provider>
+  </Trees2Context.Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
